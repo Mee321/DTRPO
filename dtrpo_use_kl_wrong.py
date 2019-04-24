@@ -323,7 +323,7 @@ for args.batch_size, num_workers in [(500,10), (500,25), (2000,10), (5000,10), (
                     new_loss = np.array(new_losses).mean()
                     kl = np.array(kls).mean()
                     print(new_loss - fval, kl)
-                    if new_loss - fval < 0 and kl < 0.1:
+                    if new_loss - fval < 0 and kl < 0.01:
                         print("Step accepted!")
                         set_flat_params_to(policy_net, xnew)
                         writer.add_scalar("n_backtracks", n_backtracks, i_episode)

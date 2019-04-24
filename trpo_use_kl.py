@@ -41,7 +41,7 @@ def linesearch(model,
         print(fval, newfval)
         kl = get_kl_real(x, xnew).mean()
 
-        if kl < 0.1 and actual_improve.item() > 0:
+        if kl < 0.01 and actual_improve.item() > 0:
             print(_n_backtracks+1, "fval after", newfval.item())
             return True, xnew
     return False, x
