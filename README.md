@@ -3,4 +3,4 @@
 DTRPO experiment code.
 
 ## reference
-[ikostrikov/pytorch-trpo](https://github.com/ikostrikov/pytorch-trpo)
+[1.ikostrikov/pytorch-trpo](https://github.com/ikostrikov/pytorch-trpo)
